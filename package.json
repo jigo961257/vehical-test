@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "checkCon": "nodemon src/db/connection.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/jigo961257/vehical-test/issues"
   },
-  "homepage": "https://github.com/jigo961257/vehical-test#readme"
+  "homepage": "https://github.com/jigo961257/vehical-test#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "tedious": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }
