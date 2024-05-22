@@ -25,3 +25,5 @@ connection.on('connect', (err) => {
 
     }
 })
+
+connection.connect();
