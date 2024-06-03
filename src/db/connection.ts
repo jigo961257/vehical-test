@@ -7,7 +7,7 @@ const config: ConnectionConfiguration = {
         type: 'default',
         options: {
             userName: 'your_username', // update me
-            password: 'your_password' // update me
+            password: 'your_password', // update me
         }
     },
     options: {
