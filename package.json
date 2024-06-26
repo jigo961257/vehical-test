@@ -8,7 +8,8 @@
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "checkCon": "nodemon src/db/connection.ts"
+    "checkCon": "nodemon src/db/connection.ts",
+    "test1" : "node src/beta/beta_working.js"
   },
   "repository": {
     "type": "git",

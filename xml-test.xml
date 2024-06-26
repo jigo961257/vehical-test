@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK"?><root>   <querycondition>      <hphm>GJ01KN3938</hphm>      <hpzl>04</hpzl>      <clsbdh>45812</clsbdh>      <jyjgbh>4300000039</jyjgbh>   </querycondition></root>
+
+// get the date
+<?xml version="1.0" encoding="GBK"?><root>   <querycondition><babh></babh> </querycondition></root>
+
+<!-- Get the list of login personnel -->
+<?xml version="1.0" encoding="GBK"?><root>   <querycondition><jyjgbh>4300000039</jyjgbh> </querycondition></root>
+
+<!-- this use with 18Z18- Obtain instrument detection data -->
+<?xml version="1.0" encoding="GBK"?><root>   <querycondition><jylsh>GJ032023101400001</jylsh> <jyjgbh>4300000039</jyjgbh> <jycs>1</jycs></querycondition></root>
