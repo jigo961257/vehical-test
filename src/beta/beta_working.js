@@ -38,7 +38,7 @@ const sendInformation = ({
         strXml: `<?xml version="1.0" encoding="GBK"?><root>   
         <QueryCondition>
         <jyjgbh>4300000039</jyjgbh> 
-        <hphm>GJ04AB1234</hphm>
+        <hphm>TEST1</hphm>
         <jcxdh></jcxdh> 
         <gwdh></gwdh> 
         </QueryCondition></root>`
@@ -112,12 +112,12 @@ const sendInformation = ({
 //         strXml: `<?xml version="1.0" encoding="GBK"?>
 //         <root>
 //         <vehispara>
-//         <jylsh>GJ032024062500004</jylsh>
+//         <jylsh>GJ032024062500008</jylsh>
 //         <jyjgbh>4300000039</jyjgbh>
 //         <jcxdh></jcxdh>
 //         <xh></xh>
 //         <hpzl>02</hpzl>
-//         <hphm>GJ04AA1257</hphm>
+//         <hphm>GJ04AA1234</hphm>
 //         <clsbdh>123456</clsbdh>
 //         <fdjh>1234</fdjh>
 //         <dpxh></dpxh>
@@ -190,39 +190,39 @@ const sendInformation = ({
 // }, 3000);
 
 // on-line dispetch 18Z64 working
-setTimeout(async () => {
-    const reqObj  =  sendInformation({
-        jkid: "18Z64",
-        strXml: `<?xml version="1.0" encoding="GBK"?>
-        <root>
-        <vehispara>
-        <jylsh>GJ032024062500004</jylsh>
-        <jcxdh>2</jcxdh>
-        <ycy>-</ycy>
-        <gwdh></gwdh>
-        </vehispara>
-        </root>`
-    });
+// setTimeout(async () => {
+//     const reqObj  =  sendInformation({
+//         jkid: "18Z64",
+//         strXml: `<?xml version="1.0" encoding="GBK"?>
+//         <root>
+//         <vehispara>
+//         <jylsh>GJ032024062500008</jylsh>
+//         <jcxdh>2</jcxdh>
+//         <ycy>-</ycy>
+//         <gwdh></gwdh>
+//         </vehispara>
+//         </root>`
+//     });
 
-    const apiRes =  await fetch("http://localhost:8141/safe.asmx/writeObjectOutNew", reqObj)
-    .then(async (response) => {
-        return {
-            status: true,
-            data: await response.text(),
-            error: null
-        }
-    })
-    .catch((error) => {
-        return {
-            status: false,
-            data: null,
-            error: error
-        }
-    });
+//     const apiRes =  await fetch("http://localhost:8141/safe.asmx/writeObjectOutNew", reqObj)
+//     .then(async (response) => {
+//         return {
+//             status: true,
+//             data: await response.text(),
+//             error: null
+//         }
+//     })
+//     .catch((error) => {
+//         return {
+//             status: false,
+//             data: null,
+//             error: error
+//         }
+//     });
 
-    console.dir(apiRes, Infinity)
+//     console.dir(apiRes, Infinity)
 
-}, 3000);
+// }, 3000);
 
 
 // 18C65- Registration of Re-inspection
@@ -243,6 +243,42 @@ setTimeout(async () => {
 //         <jycs>2024-06-26</jycs>
 //         <dly></dly>
 //         <ycy></ycy>
+//         </vehispara>
+//         </root>`
+//     });
+
+//     const apiRes =  await fetch("http://localhost:8141/safe.asmx/writeObjectOutNew", reqObj)
+//     .then(async (response) => {
+//         return {
+//             status: true,
+//             data: await response.text(),
+//             error: null
+//         }
+//     })
+//     .catch((error) => {
+//         return {
+//             status: false,
+//             data: null,
+//             error: error
+//         }
+//     });
+
+//     console.dir(apiRes, Infinity)
+
+// }, 3000);
+
+
+// rejection query
+// setTimeout(async () => {
+//     const reqObj  =  sendInformation({
+//         jkid: "18C72",
+//         strXml: `<?xml version="1.0" encoding="GBK"?>
+//         <root>
+//         <vehispara>
+//         <jylsh>GJ032024062500008</jylsh>
+//         <jyjgbh>GJ032024062500008</jyjgbh>
+//         <hpzl>02</hpzl>
+//         <hphm>GJ04AA1234</hphm>
 //         </vehispara>
 //         </root>`
 //     });
